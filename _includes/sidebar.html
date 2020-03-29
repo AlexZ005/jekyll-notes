@@ -3,6 +3,7 @@
 <div class="sidebar-main">
 
   <h1>Chapters</h1>
+<button onclick="CollapsibleLists.apply()">Collapse/Expand</button>
 
   <ul class="posts">
     {% for chapter in site.chapters %}
@@ -11,5 +12,23 @@
       </li>
     {% endfor %}
   </ul>
+
+<ul class="collapsibleList" id="renderList">
+  <li>
+    Parent item
+    <ul>
+      <li>Child item</li>
+      <li>Child item</li>
+    </ul>
+  </li>
+  <li>
+    Parent item
+    <ul>
+      <li>Child item</li>
+      <li>Child item</li>
+    </ul>
+  </li>
+</ul>
+
 </div>
 </div>

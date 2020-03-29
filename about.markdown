@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: minima
 title: About
 permalink: /about/
 ---
