@@ -5,11 +5,11 @@
   <h1>Chapters</h1>
 <button onclick="CollapsibleLists.apply()">Collapse/Expand</button>
 
-  <ul class="posts" id="menu">
+  <ul class="posts">
     {% for chapter in site.chapters %}
-	{% if chapter.path != "_chapters/chapters.html" %}
-        {{ chapter.path }}
-	{% endif %}
+      <li>
+        <a class="post-link" href="{{ chapter.url | prepend: site.baseurl }}">{{ chapter.path }}</a>
+      </li>
     {% endfor %}
   </ul>
 
