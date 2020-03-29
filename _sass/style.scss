@@ -1,0 +1,31 @@
+.sidebar {
+	display: block;
+	width: 20%;
+	max-width: $sidebar-width;
+	padding: 0;
+	border-right: $sidebar-border;
+	height: 100%;
+	overflow: hidden;
+	color: $sidebar-color;
+
+	.sidebar-main {
+		height: 100%;
+		background: $navigation-background;
+		padding: $base-height;
+	}
+
+	.sidebar-mobile {
+		display: none;
+		height: $header-height;
+		padding: $base-height;
+		text-align: right;
+
+		.close-icon, .menu-icon {
+			width: 18px;
+			cursor: pointer;
+			height: auto;
+			display: none;
+		}
+	}
+}
+

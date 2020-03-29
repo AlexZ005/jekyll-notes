@@ -43,6 +43,17 @@ asciidoctor:
     - source-highlighter=coderay
     - icons=font
 
+#collections_dir: collections
+collections:
+        sections:
+                output: false
+        chapters:
+                output: true
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

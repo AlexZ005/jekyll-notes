@@ -1,8 +1,9 @@
 = Introducing the Jekyll AsciiDoc Plugin Really?
 Author Name
+:revdate: 10-02-2013
 :page-category: Tech
 :page-tags: [ruby, jekyll, asciidoctor, ssg]
-
+//:comment_issue_id: 4
 The Jekyll AsciiDoc plugin makes Jekyll awesome.
 Why?
 Because you can write posts like this one in AsciiDoc!
