@@ -34,7 +34,7 @@ var makeul = function(hierarchy, classname){
     dirs.forEach(function(dir){
         var path = hierarchy[dir].path;
         if(path){ // file
-            ul += '<li class="file" data-url="' + path + '"><a href="' + path.replace(/^./g, '\/').replace(/(\.markdown|\.md)$/g,'\.html') + '">' + dir + '</a></li>\n';
+            ul += '<li class="file" data-url="' + path + '">' + dir + '</li>\n';
         }else{
             ul += '<li class="folder">' + dir + '\n';
             ul += makeul(hierarchy[dir]);
