@@ -8,4 +8,6 @@
     / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
   {% endif %}
 {% endfor %}
+<br />
+<a href="https://github.com/AlexZ005/alexz005.github.io/edit/master/{{page.url | remove:'.html' | append:'.md' | remove_first: "/" | prepend: "_"}}">Edit Page</a>
 </div>

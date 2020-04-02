@@ -24,11 +24,11 @@ var hierarchy = paths.reduce(function(hier,path){
     return hier;
 }, {});
 
-var makeul = function(hierarchy, classname){
+var makeul = function(hierarchy, classname, idname){
     var dirs = Object.keys(hierarchy);
     var ul = '<ul';
     if(classname){
-        ul += ' class="' + classname + '"';
+        ul += ' class="' + classname + '" id= "' + idname + '"';
     }
     ul += '>\n';
     dirs.forEach(function(dir){
@@ -45,7 +45,7 @@ var makeul = function(hierarchy, classname){
     return ul;
 };
 
-var ul = makeul(hierarchy, 'collapsibleList');
+var ul = makeul(hierarchy, 'collapsibleList', 'searchableList');
 
 document.getElementById('renderList').innerHTML = ul;
 })();
