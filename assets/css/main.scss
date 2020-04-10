@@ -79,7 +79,8 @@ ul {
 li.folder {
     position: relative;
     display: block;
-    background: rgba(250, 84, 84, 0.122);
+    font-size: 16pt;
+    //background: rgba(250, 84, 84, 0.122);
     color: rgb(50, 132, 179);
     text-decoration: none;
     border-radius: .3em;
@@ -90,8 +91,8 @@ li.folder {
 li.folder:hover {
     position: relative;
     display: block;
-    background: rgba(160, 20, 20, 0.256);
-    color: rgb(50, 132, 179);
+    color: rgb(98, 210, 218);
+
     text-decoration: none;
     border-radius: .3em;
     transition: all .3s ease-out;
