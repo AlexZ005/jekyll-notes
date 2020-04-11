@@ -6,8 +6,9 @@
   {%- if page.url == '/' -%}}
   <link rel="stylesheet" href="{{ "/assets/css/minima.css" | relative_url }}">
   {%- endif -%}
-  
+  {%- if page.url != '/' -%}}  
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  {%- endif -%}
   <link rel="stylesheet" href="{{ "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" | relative_url }}">
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
