@@ -2,6 +2,11 @@
 
 Jekyll-notes is a Jekyll theme for managing notes. Simply clone to your GitHub Page
 
+## Screenshot
+
+<img src="screenshot-menu.png" alt="drawing" width="350"/>
+
+
 ## Installing
 
 1. Edit Gemfile 
@@ -27,15 +32,31 @@ collections:
 
 3. Create _chapters folder and make .md files inside.
 
+## Debugging locally
+
+Gemfile
+```yaml
+group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-notes", :path => "../../jekyll-notes/"
+end
+```
+
+_config.yml
+```yaml
+theme: jekyll-notes
+collections:
+        sections:
+                output: false
+        chapters:
+                output: true
+```
+
 ## Advantages
 
 Contents are stored in _chapters folder and any subfolder and its files are automatically seen in submenu. The notes have to mantain yaml structure though, including three dashes and layout: default.
 
 Menu automatically generates with subfolders, isn’t it neat?
-
-## Screenshot
-
-![theme menu](screenshot-menu.png "menu screenshot")
 
 
 ## Building and testing locally
