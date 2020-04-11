@@ -33,6 +33,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-asciidoc
+  - jekyll-seo-tag
 
 asciidoc: {}
 asciidoctor:
