@@ -4,20 +4,28 @@ Jekyll-notes is a Jekyll theme for managing notes. Simply clone to your GitHub P
 
 ## Installing
 
-Gemfile 
+1. Edit Gemfile 
 ```yaml
 group :jekyll_plugins do
   gem "jekyll-remote-theme"
 end
 ```
 
-_config.yml  
+2. Edit _config.yml  
 ```yaml
 plugins:
   - jekyll-remote-theme
 
 remote_theme: alexz005/jekyll-notes
+
+collections:
+        sections:
+                output: false
+        chapters:
+                output: true
 ```
+
+3. Create _chapters folder and make .md files inside.
 
 ## Advantages
 
@@ -30,7 +38,7 @@ Menu automatically generates with subfolders, isn’t it neat?
 ![theme menu](screenshot-menu.png "menu screenshot")
 
 
-## Building and testig locally
+## Building and testing locally
 
 This site is using Jekyll/SCSS  
 bundle exec jekyll serve --port 8080
