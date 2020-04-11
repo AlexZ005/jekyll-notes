@@ -137,3 +137,8 @@ ul a{
     border-radius: 2em;
     transition: all .3s ease-out;
   }
+
+
+//line breaks
+#content br {display: none;}
+#content p br {display: inline;}
