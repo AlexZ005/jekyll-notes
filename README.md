@@ -2,6 +2,23 @@
 
 Jekyll-notes is a Jekyll theme for managing notes. Simply clone to your GitHub Page
 
+## Installing
+
+Gemfile 
+```yaml
+group :jekyll_plugins do
+  gem "jekyll-remote-theme"
+end
+```
+
+_config.yml  
+```yaml
+plugins:
+  - jekyll-remote-theme
+
+remote_theme: alexz005/jekyll-notes
+```
+
 ## Advantages
 
 Contents are stored in _chapters folder and any subfolder and its files are automatically seen in submenu. The notes have to mantain yaml structure though, including three dashes and layout: default.
@@ -15,17 +32,18 @@ Menu automatically generates with subfolders, isn’t it neat?
 
 ## Building and testig locally
 
-This site is using Jekyll/SCSS
+This site is using Jekyll/SCSS  
 bundle exec jekyll serve --port 8080
 
 ## Used sources
 
-Following were used to build this theme:
+Following were used to build this theme:  
 
 1. Parts of theme [Milidocs](http://alexander.heimbu.ch/millidocs/) by Alexander Heimbuch
-Collapsable list Javascript code from [here](http://code.iamkate.com/javascript/collapsible-lists/) by Kate Morley
-2. JavaScript code to generate menu from [here](https://stackoverflow.com/questions/26645220/build-nested-folder-structure-from-path-strings/26652662)
-3. JavaScript code to search through the list from [here](https://www.w3schools.com/howto/howto_js_filter_lists.asp)
+2. Collapsable list Javascript code from [here](http://code.iamkate.com/javascript/collapsible-lists/) by Kate Morley
+3. JavaScript code to generate menu from [here](https://stackoverflow.com/questions/26645220/build-nested-folder-structure-from-path-strings/26652662)
+4. JavaScript code to search through the list from [here](https://www.w3schools.com/howto/howto_js_filter_lists.asp)
+5. Parts of [startbootstrap](https://github.com/BlackrockDigital/startbootstrap-landing-page)
 
 ## License
 
