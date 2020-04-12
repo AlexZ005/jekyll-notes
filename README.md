@@ -1,6 +1,8 @@
 ## Jekyll-notes
 
-Jekyll-notes is a Jekyll theme for managing notes. Simply clone to your GitHub Page
+Jekyll-notes is a Jekyll theme for managing notes.  
+Simply create _chapters folder and populate it with subfolders and notes.  
+The .md files with "layout: default" would appear at Notes page submenu.
 
 ## Screenshot
 
