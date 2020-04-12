@@ -78,4 +78,4 @@ Following were used to build this theme:
 
 MIT license, except any copied code or parts used above.
 
-Have you found it useful? Drop me a line.
+Have you found it useful? Give me a star or [fork](/fork) this!
