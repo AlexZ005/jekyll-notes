@@ -11,6 +11,38 @@ The .md files with "layout: default" would appear at Notes page submenu.
 
 ## Installing
 
+### Using gem
+
+Gemfile
+```yaml
+gem "jekyll-notes"
+```
+
+_config.yml
+```yaml
+theme: jekyll-notes
+
+collections:
+        sections:
+                output: false
+        chapters:
+                output: true
+```
+
+Run `bundle install`  
+
+Create _chapters folder and make .md files inside.
+
+```yaml
+---
+layout: default
+---
+```
+
+Change index.markdown from `layout: home` to `layout: default`
+
+## Installing using jekyll-remote-theme
+
 1. Edit Gemfile 
 ```yaml
 group :jekyll_plugins do
